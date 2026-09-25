@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pipeworx-io/wynncraft",
   "title": "Wynncraft",
-  "description": "Wynncraft MMO player + guild + leaderboard + item DB lookups.",
-  "version": "0.1.0",
+  "description": "Wynncraft MCP.",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/wynncraft",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-wynncraft",
