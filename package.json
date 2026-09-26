@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-wynncraft",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Wynncraft MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-45618cca1c341d70b9e0b88edbacebce00b16abb27bd10cd826d5a3c1ae09e62",
-    "sourceCommit": "b0fb3c31386cf0256dcf1e2f1b3440435a87ec35"
+    "sourceHash": "v1-a850af4e3758ec0d6d7501331a2f480a1568ea21e208af96021b800a388d3ebd",
+    "sourceCommit": "2cb50b368da3267446f2b6f6a3ddbd3d0eed3d73"
   }
 }
