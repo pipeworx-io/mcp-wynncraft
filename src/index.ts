@@ -694,8 +694,8 @@ const tools: McpToolExport['tools'] = [
   { name: 'online_players', description: 'Currently online players by server.', inputSchema: { type: 'object', properties: {} } },
   {
     name: 'leaderboard',
-    description: 'Fetch a Wynncraft leaderboard by type (e.g. \'combatGlobalLevel\', \'guildLevel\', \'warsCompletion\'); returns ranked entries up to resultLimit.',
-    inputSchema: { type: 'object', properties: { type: { type: 'string' }, resultLimit: { type: 'number' } }, required: ['type'] },
+    description: 'Fetch a Wynncraft leaderboard by type; returns ranked entries up to resultLimit. `type` must be one of the API\'s leaderboard ids — e.g. \'combatGlobalLevel\', \'guildLevel\', \'warsCompletion\', \'playerContent\' — NOT a generic word like \'overall\' or \'level\', which the API rejects with InvalidLeaderboardType.',
+    inputSchema: { type: 'object', properties: { type: { type: 'string', description: 'Leaderboard id, e.g. combatGlobalLevel, guildLevel, warsCompletion, playerContent' }, resultLimit: { type: 'number' } }, required: ['type'] },
   },
   { name: 'item_database', description: 'Full item database.', inputSchema: { type: 'object', properties: {} } },
   { name: 'item_search', description: 'Item search by name.', inputSchema: { type: 'object', properties: { query: { type: 'string' } }, required: ['query'] } },
