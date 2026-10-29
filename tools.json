@@ -1,0 +1,117 @@
+[
+  {
+    "name": "player",
+    "description": "Fetch a Wynncraft player's stats by UUID or username: playtime, XP, guild, ranking, veteran status, and per-class totals.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "uuid_or_username": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "uuid_or_username"
+      ]
+    }
+  },
+  {
+    "name": "player_characters",
+    "description": "Character list.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "uuid_or_username": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "uuid_or_username"
+      ]
+    }
+  },
+  {
+    "name": "guild",
+    "description": "Fetch Wynncraft guild details by name or prefix (set by='prefix' to look up by tag); returns member list, level, XP, territories, and seasonal rating.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "name_or_prefix": {
+          "type": "string"
+        },
+        "by": {
+          "type": "string",
+          "description": "\"name\" (default) | \"prefix\""
+        }
+      },
+      "required": [
+        "name_or_prefix"
+      ]
+    }
+  },
+  {
+    "name": "guild_list",
+    "description": "List all guilds.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "online_players",
+    "description": "Currently online players by server.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "leaderboard",
+    "description": "Fetch a Wynncraft leaderboard by type; returns ranked entries up to resultLimit. `type` must be one of the API's leaderboard ids — e.g. 'combatGlobalLevel', 'guildLevel', 'warsCompletion', 'playerContent' — NOT a generic word like 'overall' or 'level', which the API rejects with InvalidLeaderboardType.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Leaderboard id, e.g. combatGlobalLevel, guildLevel, warsCompletion, playerContent"
+        },
+        "resultLimit": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "type"
+      ]
+    }
+  },
+  {
+    "name": "item_database",
+    "description": "Full item database.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "item_search",
+    "description": "Item search by name.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "news",
+    "description": "Official news feed.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  }
+]
