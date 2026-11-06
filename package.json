@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-wynncraft",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Wynncraft MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "wynncraft",
     "gatewaySlug": "wynncraft",
-    "sourceHash": "v1-da36aa33560f90b517a7bc48150e0f5aa0588737a0e37588d5808aae4b0cc3fd",
-    "sourceCommit": "98853f34516646cb7c4c1460f09249b262c0269e"
+    "sourceHash": "v1-3fe9b4f20f5d562ac70eee999c0508ffa69510623da624668d79836619e8736a",
+    "sourceCommit": "78b905fa3a6880dfb85c79150f4bffe8cf50ef00"
   }
 }
